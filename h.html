@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Coach</title>
+<link rel="stylesheet" href="h.css">
+</head>
+
+<body>
+
+<!-- HOME PAGE -->
+<section class="section center" id="home">
+    <h1>🎂 Happy Birthday Coach</h1>
+    <h2>A small surprise made with code 🎂</h2>
+    <button onclick="startSurprise()">Start 🎁</button>
+</section>
+
+<section class="section hidden" id="mainPage" style="background:linear-gradient(#4d4501 ,#a39622,#bbaa17,#272301);">
+
+    <h2 id="typing"></h2>
+
+    <h2 class="memory-title">📸 Memory </h2>
+
+    <div class="memory-lane">
+        <div class="memory-box"><img src="./photo_2026-02-26_23-05-09.jpg" class="wiggle" alt=""></div>
+        <div class="memory-box"><img src="./photo_2026-02-26_23-05-07.jpg" class="shake" alt=""></div>
+    </div>
+
+    <button class="celebrate-btn" onclick="goCelebrate()">Celebrate 🎉</button>
+
+</section>
+
+<section class="section hidden center" id="celebratePage">
+
+    <h1>🎉 Celebration Time 🎉</h1>
+
+    <div class="emoji-row">
+        <button onclick="showCake()">🎂 Cake</button>
+        <button onclick="showGift()">🎁 Gift</button>
+    </div>
+
+    <div id="cake" class="popup hidden">🎂</div>
+    <div id="watch" class="popup hidden">⌚</div>
+
+    <button class="last-btn" onclick="goLast()">Last Message 💐💐💐</button>
+
+    <canvas id="confetti"></canvas>
+
+</section>
+
+<section class="section hidden" id="lastPage">
+
+<div class="final-message">
+
+<h1 style="color: black;">Happy Birthday to an extraordinary mentor, teacher, and guide.</h1><br><br>
+
+Today is not just a celebration of your birthday , it is a celebration of the impact you have on the people lucky enough to learn from you, especially me. I want to take this moment to thank you, not only for teaching me how to code, but for teaching me how to believe in myself.<br><br>
+
+You are more than a teacher. You are a leader who inspires strength, a mentor who guides with wisdom, and a person who shows what it truly means to be unstoppable. You teach not only with knowledge but with passion, discipline, and kindness. Through you, I learned that success is not about never failing * it is about standing up again, trying again, and moving forward no matter what.<br><br>
+
+Thank you for believing in me when I was still learning to believe in myself. Thank you for pushing me to think deeper, work harder, and dream bigger. The confidence I am building today carries your influence in every step.<br><br>
+
+You showed me that coding is not just about writing lines of code; it is about solving problems, creating possibilities, and never stopping learning.<br><br>
+
+Strong, dedicated, inspiring, and unstoppable * that is how I see you.<br><br>
+
+On your special day, I wish you success as endless as clean code, happiness as constant as a running program, and achievements greater than any project you have ever built.<br><br>
+
+Happy Birthday and thank you for helping me become stronger, braver, and more unstoppable every day.
+
+</div>
+
+<button class="bye-btn" onclick="sayBye()">Bye 👋</button>
+<div id="wave" class="wave hidden">👋</div>
+
+</section>
+
+<script src="h.js"></script>
+</body>
+</html>

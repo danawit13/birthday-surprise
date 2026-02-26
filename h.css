@@ -1,0 +1,154 @@
+/* BASE STYLES */
+body{
+    margin:0;
+    font-family:'Courier New', Courier, monospace;
+    background: radial-gradient(circle, #0844a5,#1d6073, #2ea29f);
+    color:rgb(221, 218, 233);
+    overflow-x:hidden;
+}
+
+.section{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:30px;
+}
+
+button{
+    padding:12px 25px;
+    font-size:18px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:linear-gradient(45deg,#1facaa,#af72e9);
+    color:white;
+    transition:.3s;
+    margin-top:20px;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.hidden{
+    display:none;
+}
+
+.memory-title{
+    margin-top:40px;
+}
+
+.memory-lane {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.memory-box {
+    height: 400px; 
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:#1e293b;
+    border-radius: 15px;
+}
+
+.memory-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.memory-box img.shake {
+  animation: shake 3s infinite;
+}
+
+.memory-box img.wiggle {
+  animation: wiggle 3s infinite ease-in-out;
+}
+
+.emoji-row button{
+    margin:10px;
+    font-size:20px;
+}
+
+.popup{
+    font-size:80px;
+    animation:pop .6s ease;
+}
+
+@keyframes pop{
+    0%{transform:scale(0);}
+    100%{transform:scale(1);}
+}
+
+.last-btn{
+    margin-top:40px;
+}
+
+.final-message{
+    max-width:800px;
+    line-height:1.7;
+    font-size:20px;
+    font-family:cursive;
+    animation:fadeIn 2s ease;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* CONFETTI */
+#confetti{
+    position:fixed;
+    top:0;
+    left:0;
+    pointer-events:none;
+}
+
+/* BYE BUTTON */
+.bye-btn{
+    margin-top:40px;
+    background:linear-gradient(45deg,#22c55e,#16a34a);
+}
+
+/* WAVE ANIMATION */
+.wave{
+    font-size:100px;
+    margin-top:20px;
+    animation:waveAnim 1s infinite;
+}
+
+@keyframes waveAnim{
+    0%{transform:rotate(0deg);}
+    25%{transform:rotate(20deg);}
+    50%{transform:rotate(0deg);}
+    75%{transform:rotate(-20deg);}
+    100%{transform:rotate(0deg);}
+}
